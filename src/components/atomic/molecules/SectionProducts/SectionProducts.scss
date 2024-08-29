@@ -1,0 +1,239 @@
+.section-products{
+  &__header{
+    height: 18rem;
+    position: relative;
+    background-image: url("../../../../assets/images/Banner_Colonos.webp");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &--logo{
+      width: 15rem;
+      height: 15rem;
+      background-image: url("../../../../assets/images/Logo_LC_blanco.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+
+  .slider {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &__track {
+      display: flex;
+      animation: scroll 30s linear infinite; // Ajustar duración para el doble de imágenes
+    }
+
+    &__image {
+      width: 33.33%;
+      flex-shrink: 0;
+    }
+
+    @keyframes scroll {
+      0% {
+        transform: translateX(0);
+      }
+      100% {
+        transform: translateX(-100%); // Desplazar el doble de la longitud del contenedor original
+      }
+    }
+  }
+
+  &__content{
+
+    &--title{
+      text-align: center;
+      font-size: 64px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.12;
+      color: #1a3b2a;
+      margin: 141px 2px 53px 1px;
+      font-family: "Raleway", sans-serif;
+    }
+
+    .section-products__list-images{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 5rem;
+        margin: 0 auto;
+        max-width: 1200px;
+
+      .section-products__image--container{
+        max-width: 100px;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        .section-products__image{
+
+        }
+
+        p{
+          font-family: "Cera Roud Pro DEMO", sans-serif;
+          font-size: 27px;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.52;
+          letter-spacing: normal;
+          text-align: center;
+          color: #1a3b2a;
+        }
+      }
+
+      p{
+        font-family: "Cera Roud Pro DEMO", sans-serif;
+        font-size: 27px;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.52;
+        letter-spacing: normal;
+        text-align: center;
+        color: #1a3b2a;
+        padding-top: 0;
+        margin-top: 0;
+      }
+    }
+
+  }
+
+  .section-products__footer{
+    position: relative;
+    height: 21.1875rem;
+    background-image: url("../../../../assets/images/bannerTop.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    flex-direction: column;
+
+    span{
+      font-family: "Raleway", sans-serif;
+      font-size: 22px;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.32;
+      letter-spacing: 1.1px;
+      text-align: center;
+      color: #ffffff;
+    }
+
+    p{
+      font-family: "Raleway", sans-serif;
+      font-size: 22px;
+      font-weight: 900;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.32;
+      letter-spacing: 1.1px;
+      text-align: center;
+      color: #ffffff;
+      margin: 0;
+      padding-bottom: 2rem;
+    }
+
+
+  }
+  .section-products__footer--bottom{
+    position: relative;
+    width: 100%;
+    height: 21.1875rem;
+    background-image: url("../../../../assets/images/bannerBottom.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    .content{
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+
+      &__img--left{
+        background-image: url("../../../../assets/Ornamento1.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 350px;
+        width: 33%;
+      }
+
+      &__description{
+        display: flex;
+        align-items: flex-end;
+        height: 100%;
+        width: 53%;
+        justify-content: center;
+
+        &--image-clic{
+          height: 100px;
+          width: 100px;
+          background-image: url("../../../../assets/images/IconClick.svg");
+          background-position: center;
+          background-repeat: no-repeat;
+          background-size: contain;
+        }
+
+        h2{
+            font-family: "Raleway", sans-serif;
+            font-size: 44px;
+            font-weight: bold;
+            font-stretch: normal;
+            font-style: normal;
+            line-height: 1.32;
+            letter-spacing: normal;
+            text-align: left;
+            color: #4fc685;
+            margin: 0;
+            padding: 0;
+        }
+
+        p{
+          font-family: "Raleway", sans-serif;
+          font-size: 44px;
+          font-weight: normal;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.32;
+          letter-spacing: normal;
+          text-align: left;
+          color: #4fc685;
+          margin: 0;
+          padding: 0;
+
+        }
+      }
+
+      &__img--right{
+        background-image: url("../../../../assets/Ornamento2.webp");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+        height: 350px;
+        width: 33%;
+      }
+    }
+  }
+
+
+
+}

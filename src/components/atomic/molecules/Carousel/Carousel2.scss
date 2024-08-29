@@ -1,0 +1,33 @@
+.carousel__container--image {
+  width: 100%;
+  position: relative;
+
+  .carousel__image {
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: auto;
+  }
+
+  .carousel__image--loaded {
+    opacity: 1;
+  }
+
+  .carousel__buttons--container {
+    display: flex;
+    align-content: center;
+    flex-direction: row;
+    margin-top: 0.9375rem;
+    position: absolute;
+    width: 100%;
+    top: 50%;
+    left: 0;
+    justify-content: space-between;
+
+    .carousel__buttons {
+      color: #ffffff;
+      cursor: pointer;
+    }
+  }
+}

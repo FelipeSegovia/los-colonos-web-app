@@ -1,0 +1,130 @@
+.section-history {
+  position: relative;
+
+  .container-header {
+    position: relative;
+    &__first-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      z-index: 0;
+      width: 100%;
+      height: 200px;
+    }
+
+    &__second-bg {
+      position: absolute;
+      top: 2.5rem;
+      left: 0;
+      z-index: 2;
+      width: 100%;
+      height: 200px;
+    }
+
+    &__third-bg {
+      position: absolute;
+      top: 5.5rem;
+      left: 0;
+      z-index: 1;
+      width: 100%;
+      height: 200px;
+    }
+
+    &__content {
+      position: relative;
+      padding: 3rem 0;
+      display: flex;
+      justify-content: space-between;
+      z-index: 4;
+      width: 100%;
+
+      h1 {
+        color: #ffffff;
+        font-family: "Poppins";
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.12;
+        font-size: 4.0625rem;
+      }
+
+      img {
+        width: 20rem;
+      }
+    }
+  }
+
+  &__container-description {
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+
+    .description-text {
+      width: 35%;
+      padding-right: 4rem;
+
+      &__title {
+        font-family: "Poppins", sans-serif;
+        font-size: 2.6875rem;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: italic;
+        letter-spacing: normal;
+        text-align: left;
+        color: #1a3b2a;
+      }
+
+      &__description {
+        font-family: "Poppins", sans-serif;
+        font-size: 1.1875rem;
+        font-weight: 300;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.26;
+        letter-spacing: normal;
+        text-align: left;
+        color: #1a3b2a;
+      }
+    }
+
+    .container-img-tomato {
+      position: relative;
+      width: 40.625rem;
+      height: 21.1875rem;
+      background-image: url("../../../../assets/Tomato.webp");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: contain;
+    }
+  }
+}
+
+.home-page__history-description--container {
+  display: flex;
+  justify-content: center;
+  padding-top: 2rem;
+
+  .description-text {
+    width: 20%;
+
+    p {
+      font-family: "Poppins", sans-serif;
+    }
+  }
+
+  .container-img-tomato {
+    width: 50%;
+    img {
+      width: 60%;
+    }
+  }
+}
+
+.history__footer--container {
+  background-image: url("../../../../assets//images/Banner\ bottom\ Los\ Colonos.webp");
+  height: 29rem;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  box-sizing: border-box;
+}
