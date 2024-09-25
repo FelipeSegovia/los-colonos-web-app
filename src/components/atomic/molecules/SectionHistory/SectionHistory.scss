@@ -1,3 +1,5 @@
+@import "@/sass/mixins";
+
 .section-history {
   position: relative;
 
@@ -38,9 +40,13 @@
       z-index: 4;
       width: 100%;
 
+      @include phone{
+        width: 100vw;
+      }
+
       h1 {
         color: #ffffff;
-        font-family: "Poppins";
+        font-family: "Poppins", sans-serif;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
