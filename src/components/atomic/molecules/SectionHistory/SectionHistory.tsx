@@ -5,7 +5,6 @@ import OrnamentoRight from "../../../../assets/Ornamento2.webp";
 import "./SectionHistory.scss";
 import HeaderSection from "../../atoms/HeaderSection";
 
-
 const SectionHistory: React.FC = () => {
   return (
     <div className="section-history">
@@ -14,10 +13,10 @@ const SectionHistory: React.FC = () => {
           <HeaderSection backgroundColor="#009246" />
         </div>
         <div className="container-header__second-bg">
-          <HeaderSection backgroundColor="#a57949" />
+          <HeaderSection backgroundColor="#009246" />
         </div>
         <div className="container-header__third-bg">
-          <HeaderSection backgroundColor="#f2a952" />
+          <HeaderSection backgroundColor="#519551" />
         </div>
         <div className="container-header__content">
           <img src={OrnamentoLeft} alt="Ornamento Izquierdo" />
